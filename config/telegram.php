@@ -28,20 +28,6 @@ return [
     |                       Acme\Project\Commands\BotFather\ByeCommand::class,
     |             ]
     */
-    'bots' => [
-        'mybot' => [
-            'token' => env('6158259501:AAFLeTgnV1KRqFs9sdyEemHTAxbrWFU8i8o', '6158259501:AAFLeTgnV1KRqFs9sdyEemHTAxbrWFU8i8o'),
-            'certificate_path' => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
-            'webhook_url' => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
-            'commands' => [
-                //Acme\Project\Commands\MyTelegramBot\BotCommand::class
-            ],
-        ],
-
-        //        'mySecondBot' => [
-        //            'token' => '123456:abc',
-        //        ],
-    ],
 
     /*
     |--------------------------------------------------------------------------

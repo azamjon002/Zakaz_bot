@@ -34,17 +34,3 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Contact
     Route::apiResource('contacts', 'ContactApiController');
 });
-
-Route::post('/bot/getupdates', function() {
-    $updates = Telegram::getUpdates();
-    return (json_encode ($updates));
-});
-
-
-Route::post('bot/sendmessage', function() {
-    Telegram::sendMessage([
-        'chat_id' => 'RECIPIENT_CHAT_ID',
-        'text' => 'Salom dunyo!'
-    ]);
-    return;
-});
